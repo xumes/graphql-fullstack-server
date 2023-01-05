@@ -43,6 +43,15 @@ const resolvers = {
             user.username = username
 
             return  user
+        },
+        deleteUser: (parent, args) => {
+            const id = args.id 
+            const userIndex = UserList.findIndex((user) => { return user.id === parseInt(id)})
+            const user = UserList[userIndex]
+
+            UserList.splice(userIndex, 1)
+
+            return  user
         }
     }
 }
