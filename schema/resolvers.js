@@ -30,8 +30,17 @@ const resolvers = {
             const user = args.input
             const newId = UserList.length +1
             user.id = newId
-            
+
             UserList.push(user)
+
+            return  user
+        },
+        updateUsername: (parent, args) => {
+            const {username, id} = args.input
+            const userIndex = UserList.findIndex((user) => { return user.id === parseInt(id)})
+
+            const user = UserList[userIndex]
+            user.username = username
 
             return  user
         }
