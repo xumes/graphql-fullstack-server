@@ -5,6 +5,7 @@ const UserList = [
         username: 'reggie',
         age: 20,
         nationality: 'CANADA',
+        favoriteMovies: [1, 2],
         friends: [
             {
                 id: 3,
@@ -27,14 +28,16 @@ const UserList = [
         name: 'Reginaldo',
         username: 'reginaldo',
         age: 20,
-        nationality: 'BRAZIL'
+        nationality: 'BRAZIL',
+        favoriteMovies: [3, 4],
     },
     {
         id: 3,
         name: 'Vin',
         username: 'vin',
         age: 12,
-        nationality: 'BRAZIL'
+        nationality: 'BRAZIL',
+        favoriteMovies: [5],
     },
     {
         id: 4,
@@ -42,6 +45,7 @@ const UserList = [
         username: 'smlimasantos',
         age: 30,
         nationality: 'BRAZIL',
+        favoriteMovies: [6, 7, 8],
         friends: [
             {
                 id: 2,
